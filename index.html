@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>FrigateSolar</title>
+  <meta name="title" content="FrigateSolar">
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.png" type="image/svg+xml" width="575" height="550" alt="" class="img-cover">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./hero-bg.jpg">
+  <link rel="preload" as="image" href="./hero-slide-1.jpg">
+  <link rel="preload" as="image" href="./hero-slide-2.jpg">
+  <link rel="preload" as="image" href="./hero-slide-3.jpg">
+
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./logo-light.png" width="100" height="24" alt="FrigateSolar home" class="logo-light">
+
+        <img src="./logo-dark.png" width="100" height="24  " alt="FrigateSolar home" class="logo-dark">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./logo-light.png" width="100" height="24" alt="FrigateSolar home">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#ABOUT" class="navbar-link">About</a>
+          </li>
+
+          <li>
+            <a href="#case" class="navbar-link">Projects</a>
+          </li>
+
+          
+
+          <li>
+            <a href="#footer" class="navbar-link">Contact</a>
+          </li>
+
+        </ul>
+
+        <div class="wrapper">
+          <a href="mailto:jimabdulmueez19@email.com" class="contact-link">jimabdulmueez19@email.com</a>
+
+          <a href="tel:+2349056817349" class="contact-link">+234 90 5681 7349</a>
+        </div>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-dribbble"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero has-bg-image" aria-label="home"
+        style="background-image: url('./hero-bg.jpg')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title">Switch to Clean Energy Today!</h1>
+
+            <p class="hero-text">
+              Harness the power of the sun with FrigateSolar. We provide top-quality solar solutions
+               tailored for your home or business. Save money, protect the environment, and enjoy uninterrupted power.
+            </p>
+
+            <div class="btn-wrapper">
+
+              <a href="#case" class="btn btn-primary">Explore Now</a>
+
+              <a href="#footer" class="btn btn-outline">Contact Us</a>
+
+            </div>
+
+          </div>
+
+          <div class="hero-slider" data-slider>
+
+            <div class="slider-inner">
+              <ul class="slider-container" data-slider-container>
+
+                <li class="slider-item">
+
+                  <figure class="img-holder" style="--width: 575; --height: 550;">
+                    <img src="./hero-slide-1.jpg" width="575" height="550" alt="" class="img-cover">
+                  </figure>
+
+                </li>
+
+                <li class="slider-item">
+
+                  <div class="hero-card">
+                    <figure class="img-holder" style="--width: 575; --height: 550;">
+                      <img src="./hero-slide-2.jpg" width="575" height="550" alt="hero banner"
+                        class="img-cover">
+                    </figure>
+
+                  </div>
+
+                </li>
+
+                <li class="slider-item">
+
+                  <figure class="img-holder" style="--width: 575; --height: 550;">
+                    <img src="./hero-slide-3.jpg" width="575" height="550" alt="" class="img-cover">
+                  </figure>
+
+                </li>
+
+              </ul>
+            </div>
+
+            <button class="slider-btn prev" aria-label="slide to previous" data-slider-prev>
+              <ion-icon name="arrow-back"></ion-icon>
+            </button>
+
+            <button class="slider-btn next" aria-label="slide to next" data-slider-next>
+              <ion-icon name="arrow-forward"></ion-icon>
+            </button>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service" aria-labelledby="service-label">
+        <div class="container">
+
+          <p class="section-subtitle" id="service-label">What We Do?</p>
+
+          <h2 class="h2 section-title">
+            The service we offer is specifically designed to meet your needs.
+          </h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">24/7 Support</h3>
+
+                <p class="card-text">
+                  Our team is available 24/7 to ensure your solar systems run smoothly, providing prompt support whenever you need it.
+                </p>
+
+            
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="shield-checkmark-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">Secure Payments</h3>
+
+                <p class="card-text">
+                  Enjoy peace of mind with our secure payment options, ensuring your transactions are safe and hassle-free.
+                </p>
+
+              
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="cloud-download-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">Maintenance</h3>
+
+                <p class="card-text">
+                  Ensure optimal performance with our reliable maintenance services, keeping your solar systems efficient and trouble-free.
+               </p>
+
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="pie-chart-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">Market Research</h3>
+
+                <p class="card-text">
+                  Leverage our in-depth market research to make informed decisions and stay ahead in the renewable energy industry.
+                </p>
+
+            
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="about" aria-labelledby="about-label" id="ABOUT">
+        <div class="container">
+
+          <figure class="about-banner">
+            <img src="./about-banner.png" width="800" height="580" loading="lazy" alt="about banner"
+              class="w-100">
+          </figure>
+
+          <div class="about-content">
+
+            <p class="section-subtitle" id="about-label">Why Choose Us?</p>
+
+            <h2 class="h2 section-title">
+              We bring solutions to make life easier for our clients.
+            </h2>
+
+            <ul>
+
+              <li class="about-item">
+                <div class="accordion-card expanded" data-accordion>
+
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+
+                      <spna class="span h5">Customized Solar Solutions</spna>
+                    </button>
+                  </h3>
+
+                  <p class="accordion-content">
+                    We design and install solar systems tailored to your energy needs, ensuring maximum efficiency and cost savings.
+                  </p>
+
+                </div>
+              </li>
+
+              <li class="about-item">
+                <div class="accordion-card" data-accordion>
+
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+
+                      <spna class="span h5">Reliable Backup Power</spna>
+                    </button>
+                  </h3>
+
+                  <p class="accordion-content">
+                    Our battery and inverter solutions provide uninterrupted power, keeping your home or business running smoothly during outages.
+                  </p>
+
+                </div>
+              </li>
+
+              <li class="about-item">
+                <div class="accordion-card" data-accordion>
+
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+
+                      <spna class="span h5">Affordable Financing Options</spna>
+                    </button>
+                  </h3>
+
+                  <p class="accordion-content">
+                    We offer flexible payment plans to make switching to solar simple and accessible for everyone.
+
+                  </p>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #FEATURE
+      -->
+
+      <section class="section feature" aria-labelledby="feature-label">
+        <div class="container">
+
+          <figure class="feature-banner">
+            <img src="./feature-banner.png" width="800" height="531" loading="lazy" alt="feature banner"
+              class="w-100">
+          </figure>
+
+          <div class="feature-content">
+
+            <p class="section-subtitle" id="feautre-label">Our Solutions</p>
+
+            <h2 class="h2 section-title">
+              Our goal is to empower our clients with reliable, eco-friendly, and cost-effective solar energy systems.
+            </h2>
+
+
+            <ul class="feature-list">
+
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <span class="span">
+                    Customized Solar Solutions
+                  </span>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <span class="span">
+                    Reliable Backup Power
+                  </span>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <span class="span">
+                    24/7 Support and Maintenance
+                  </span>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <span class="span">
+                    Secure Payments and Daily Updates
+                  </span>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #STATS
+      -->
+
+      <section class="stats" aria-label="our stats">
+        <div class="container">
+
+          <ul class="stats-card has-bg-image" style="background-image: url('./stats-bg.jpg')">
+
+            <li>
+              <p class="card-text">
+                <span class="h1">192</span>
+
+                <spna class="span">Completed Projects</spna>
+              </p>
+            </li>
+
+            <li>
+              <p class="card-text">
+                <span class="h1">135</span>
+
+                <spna class="span">Happy Customers</spna>
+              </p>
+            </li>
+
+            <li>
+              <p class="card-text">
+                <span class="h1">11</span>
+
+                <spna class="span">Uncompleted Projects</spna>
+              </p>
+            </li>
+
+            <li>
+              <p class="card-text">
+                <span class="h1">99%</span>
+
+                <spna class="span">clients Rating</spna>
+              </p>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PROJECT
+      -->
+
+      <section class="section project" aria-labelledby="project-label" id="case">
+        <div class="container">
+
+          <p class="section-subtitle" id="project-label">Check Out</p>
+
+          <h2 class="h2 section-title">
+            Check out some of our awesome projects quotation.
+          </h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
+                  <img src="./blog-1.jpg" width="560" height="350" loading="lazy"
+                    alt="Ligula tristique quis risus" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  
+                  <h3 class="h3">
+                    <a href="./Student Plan.pdf" class="card-title" style="text-align: center;">Student Plan</a>
+                  </h3>
+
+                <p class="card-text" style=" text-align: center;">
+                  Empowering students with affordable solar solutions! Our Student Plan offers tailored, 
+                  budget-friendly quotations to make clean energy accessible
+                   for academic and personal needs. Study smarter with uninterrupted power designed just for you!
+                  </p>
+ 
+                  <h3 class="h3">
+                    <a href="./Student Plan.pdf" class="card-title" style="color: white; text-align: center;
+                    background-image: url('./stats-bg.jpg'); font-size: 18px;
+                    border-radius: 20px;">Check Out</a>
+                  </h3>
+
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+
+                    </li>
+
+                    <li class="card-meta-item">
+
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
+                  <img src="./blog-2.jpg" width="560" height="350" loading="lazy"
+                    alt="Ligula tristique quis risus" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  
+                  <h3 class="h3">
+                    <a href="./2-bedroom self-contain.pdf" class="card-title" style="text-align: center;">2-Bedroom Self-Contain </a>
+                  </h3>
+
+                <p class="card-text" style=" text-align: center;">
+                  At FrigateSolar, we offer tailored solar solutions for every home. For a 2-bedroom self-contained unit, our quotation includes
+                   a full assessment of your energy needs, followed by the installation of high-quality solar panels, inverters, and batteries.
+                  </p>
+ 
+                  <h3 class="h3">
+                    <a href="./2-bedroom self-contain.pdf" class="card-title" style="color: white; text-align: center;
+                    background-image: url('./stats-bg.jpg'); font-size: 18px;
+                    border-radius: 20px;">Check Out</a>
+                  </h3>
+
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+
+                    </li>
+
+                    <li class="card-meta-item">
+
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
+                  <img src="./blog-3.jpg" width="560" height="350" loading="lazy"
+                    alt="Ligula tristique quis risus" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  
+                  <h3 class="h3">
+                    <a href="./3-bedroom and above.pdf" class="card-title" style="text-align: center;">3-Bedroom Self-Contain and Above </a>
+                  </h3>
+
+                <p class="card-text" style=" text-align: center;">
+                  Our solar solutions are perfect for homes of all sizes, including 
+                  3-bedroom self-contained apartments and larger properties. We provide 
+                  tailored solar systems to meet your energy needs, ensuring you enjoy 
+                  uninterrupted power and significant savings on electricity bills. 
+                  </p>
+ 
+                  <h3 class="h3">
+                    <a href="./3-bedroom and above.pdf" class="card-title" style="color: white; text-align: center;
+                    background-image: url('./stats-bg.jpg'); font-size: 18px;
+                    border-radius: 20px;">Check Out</a>
+                  </h3>
+
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+
+                    </li>
+
+                    <li class="card-meta-item">
+
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
+                  <img src="./blog-4.jpg" width="560" height="350" loading="lazy"
+                    alt="Ligula tristique quis risus" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  
+                  <h3 class="h3">
+                    <a href="./farm pumping machine.pdf" class="card-title" style="text-align: center;">Farm Pumping Machine</a>
+                  </h3>
+
+                <p class="card-text" style=" text-align: center;">
+                  At FrigateSolar, we offer efficient and reliable solar-powered farm pumping solutions 
+                  designed to meet the needs of modern agriculture. Our solar pumping systems are ideal for irrigation, livestock watering, 
+                  and other farming operations, providing you with an eco-friendly, cost-effective alternative to traditional fuel-powered pumps.
+                  </p>
+ 
+                  <h3 class="h3">
+                    <a href="./farm pumping machine.pdf" class="card-title" style="color: white; text-align: center;
+                    background-image: url('./stats-bg.jpg'); font-size: 18px;
+                    border-radius: 20px;">Check Out</a>
+                  </h3>
+
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+
+                    </li>
+
+                    <li class="card-meta-item">
+
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
+                  <img src="./blog-5.jpg" width="560" height="350" loading="lazy"
+                    alt="Ligula tristique quis risus" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  
+                  <h3 class="h3">
+                    <a href="./contact.pdf" class="card-title" style="text-align: center;"> Restaurant and Shop</a>
+                  </h3>
+
+                <p class="card-text" style=" text-align: center;">
+                  At Frigate Solar, we offer tailored solar solutions for restaurants and shops, 
+                  designed to reduce energy costs and improve efficiency. Our solar systems provide 
+                  reliable power for lighting, refrigeration, and other essential equipment, ensuring 
+                  that your business runs smoothly even during outages.
+                   We provide detailed quotations based on your energy needs, ensuring transparency and affordability.
+                  </p>
+ 
+                  <h3 class="h3">
+                    <a href="./contact.pdf" class="card-title" style="color: white; text-align: center;
+                    background-image: url('./stats-bg.jpg'); font-size: 18px;
+                    border-radius: 20px;">Check Out</a>
+                  </h3>
+
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+
+                    </li>
+
+                    <li class="card-meta-item">
+
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
+                  <img src="./blog-6.jpg" width="560" height="350" loading="lazy"
+                    alt="Ligula tristique quis risus" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  
+                  <h3 class="h3">
+                    <a href="./contact.pdf" class="card-title" style="text-align: center;"> Office</a>
+                  </h3>
+
+                <p class="card-text" style=" text-align: center;">
+                  At FrigateSolar, we provide customized quotations for solar installations
+                   tailored to the unique needs of your office. Our quotes include a
+                   detailed breakdown of the costs, covering everything from equipment and installation to maintenance services.
+                   With transparent pricing and no hidden fees, we ensure you receive the best value for a reliable, energy-efficient solution that powers your office sustainably.  
+                  </p>
+ 
+                  <h3 class="h3">
+                    <a href="./contact.pdf" class="card-title" style="color: white; text-align: center;
+                    background-image: url('./stats-bg.jpg'); font-size: 18px;
+                    border-radius: 20px;">Check Out</a>
+                  </h3>
+
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+
+                    </li>
+
+                    <li class="card-meta-item">
+
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+                        
+
+           
+
+           
+
+           
+
+            
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CTA
+      -->
+
+
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" id="footer">
+    <div class="container grid-list">
+
+      <div class="footer-brand">
+
+        <a href="#" class="logo">
+          <img src="./logo-light.png" width="100" height="24" alt="FrigateSolar home">
+        </a>
+
+        <p class="footer-text">
+          &copy; 2025 FrigateSolar. <br> All rights reserved.
+        </p>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=61557875902178" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+    
+
+     
+
+          <li>
+            <a href="https://www.instagram.com/frigatesolar/profilecard/?igsh=M3lueTgxMXNpNmtt" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+
+
+        </ul>
+
+      </div>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Get in Touch</p>
+        </li>
+
+
+        <li>
+          <a href="mailto:jimabdulmueez19@email.com" class="footer-link">jimabdulmueez19@email.com</a>
+        </li>
+
+        <li>
+          <a href="tel:09056817349" class="footer-link">+234 90 5681 7349</a>
+        </li>
+
+      </ul>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Learn More</p>
+        </li>
+
+        <li>
+          <a href="#ABOUT" class="footer-link">About Us</a>
+        </li>
+
+        <li>
+          <a href="#case" class="footer-link">Projects</a>
+        </li>
+
+   
+
+      </ul>
+
+      <div class="footer-list">
+
+        <p class="h4 footer-list-title">Our Newsletter</p>
+
+        <p class="footer-text">
+          Subscribe to our newsletter to get our news & deals delivered to you.
+        </p>
+
+        <form action="" class="input-wrapper">
+          <input type="email" name="email_address" placeholder="Email Address" required class="input-field">
+
+          <button type="submit" class="submit-btn">Join</button>
+        </form>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
